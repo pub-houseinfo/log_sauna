@@ -1,0 +1,791 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+    })(window,document,'script','dataLayer','GTM-K64K3WZP');</script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>【公式】Log Koti 持込BBQプラン | 焼く・ととのう・揺れる、森ぜんぶ貸切で。</title>
+    <meta name="description" content="生野高原のログハウス Log Kotiを4〜6人で貸切。屋根付きBBQ・ドームサウナ・山水ドラム缶風呂・ペアハンギングチェアぜんぶ込みの持込BBQプラン。">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Zen+Maru+Gothic:wght@400;700;900&display=swap" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        :root {
+            --color-main: #4d7c0f;
+            --color-accent: #f97316;
+            --color-bg: #fffcf2;
+            --color-text: #2d2d2d;
+        }
+
+        body {
+            font-family: 'Zen Maru Gothic', sans-serif;
+            background-color: var(--color-bg);
+            color: var(--color-text);
+            line-height: 1.7;
+            scroll-behavior: smooth;
+        }
+
+        .pop-title {
+            font-weight: 900;
+            line-height: 1.3;
+        }
+
+        .highlight {
+            background: linear-gradient(transparent 70%, #fde68a 70%);
+        }
+
+        .btn-bounce {
+            background-color: var(--color-accent);
+            color: white !important;
+            padding: 1.25rem 2.5rem;
+            border-radius: 9999px;
+            display: inline-block;
+            font-weight: 900;
+            font-size: 1.1rem;
+            transition: transform 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275), opacity 0.5s ease;
+            box-shadow: 0 10px 20px -5px rgba(249, 115, 22, 0.4);
+            text-decoration: none;
+            cursor: pointer;
+        }
+
+        .btn-bounce:hover {
+            transform: scale(1.05) rotate(-1deg);
+            opacity: 1 !important;
+        }
+
+        .btn-green {
+            background-color: var(--color-main);
+            color: white !important;
+            padding: 1.25rem 2.5rem;
+            border-radius: 9999px;
+            display: inline-block;
+            font-weight: 900;
+            font-size: 1.1rem;
+            transition: transform 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+            box-shadow: 0 10px 20px -5px rgba(77, 124, 15, 0.4);
+            text-decoration: none;
+            cursor: pointer;
+        }
+
+        .btn-green:hover {
+            transform: scale(1.05) rotate(1deg);
+        }
+
+        .floating-cta {
+            position: fixed;
+            bottom: 20px;
+            left: 50%;
+            transform: translateX(-50%) translateY(150%);
+            z-index: 50;
+            width: 90%;
+            max-width: 400px;
+            transition: transform 0.5s ease;
+        }
+        .floating-cta.show {
+            transform: translateX(-50%) translateY(0);
+        }
+
+        .card-pop {
+            background: white;
+            border-radius: 2rem;
+            border: 3px solid #f3f4f6;
+            transition: all 0.3s ease;
+        }
+
+        .card-pop:hover {
+            border-color: var(--color-main);
+            transform: translateY(-5px);
+        }
+
+        .badge {
+            background: var(--color-main);
+            color: white;
+            padding: 0.25rem 1rem;
+            border-radius: 2rem;
+            font-size: 0.8rem;
+            font-weight: 700;
+            display: inline-block;
+        }
+
+        .fade-in {
+            opacity: 0;
+            transform: translateY(30px);
+            transition: all 0.8s ease-out;
+        }
+
+        .fade-in.visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        .bg-pattern {
+            background-image: radial-gradient(#d1d5db 0.5px, transparent 0.5px);
+            background-size: 20px 20px;
+        }
+
+        .benefit-icon {
+            width: 48px;
+            height: 48px;
+            margin: 0 auto 1.5rem;
+            color: #fde68a;
+        }
+
+        /* --- 4分割アコーディオン --- */
+        .accordion-wrapper {
+            display: flex;
+            width: 100%;
+            height: 100%;
+        }
+
+        .accordion-item {
+            position: relative;
+            flex: 1;
+            height: 100%;
+            transition: all 0.7s cubic-bezier(0.25, 1, 0.5, 1);
+            overflow: hidden;
+            cursor: pointer;
+            text-decoration: none;
+        }
+
+        .accordion-item img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform 0.7s ease;
+        }
+
+        .accordion-label {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -40%);
+            color: white;
+            font-weight: 900;
+            font-size: 2rem;
+            letter-spacing: 0.2em;
+            text-shadow: 0 4px 15px rgba(0,0,0,0.6);
+            white-space: nowrap;
+            opacity: 0;
+            transition: all 0.6s cubic-bezier(0.23, 1, 0.32, 1);
+            z-index: 5;
+            pointer-events: none;
+        }
+
+        @media (min-width: 768px) {
+            .accordion-wrapper { flex-direction: row; }
+            .accordion-wrapper:hover .accordion-item { flex: 0.6; }
+            .accordion-wrapper .accordion-item:hover { flex: 3; }
+            .accordion-item:hover .accordion-label {
+                opacity: 1;
+                transform: translate(-50%, -50%);
+            }
+            .accordion-item:hover img { transform: scale(1.05); }
+
+            header:has(.accordion-item:hover) .header-text-elements {
+                opacity: 0;
+                visibility: hidden;
+                transform: translateY(-20px);
+            }
+            header:has(.accordion-item:hover) .header-button-element .btn-bounce {
+                opacity: 0.7;
+            }
+        }
+
+        @media (max-width: 767px) {
+            .accordion-wrapper { flex-direction: column; }
+            .accordion-item { flex: 1; width: 100%; }
+            .accordion-item.active { flex: 4; }
+            .accordion-item.active .accordion-label {
+                opacity: 1;
+                transform: translate(-50%, -50%);
+                font-size: 2.5rem;
+            }
+            .accordion-label { font-size: 1.2rem; }
+
+            header:has(.accordion-item.active) .header-text-elements {
+                opacity: 0;
+                visibility: hidden;
+            }
+            header:has(.accordion-item.active) .header-button-element .btn-bounce {
+                opacity: 0.7;
+            }
+        }
+
+        .header-content {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 100%;
+            z-index: 20;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            pointer-events: none;
+        }
+
+        .header-text-elements {
+            transition: all 0.5s ease;
+            text-align: center;
+            width: 100%;
+        }
+
+        .header-button-element {
+            pointer-events: auto;
+            z-index: 30;
+            margin-top: 1rem;
+        }
+
+        /* ヒーローキャッチ強調 */
+        .hero-h1 {
+            text-shadow:
+                2px 3px 0 rgba(0,0,0,0.35),
+                0 6px 20px rgba(0,0,0,0.55);
+        }
+
+        .hero-keyword {
+            display: inline-block;
+            color: #fde68a;
+            background: linear-gradient(transparent 58%, rgba(249, 115, 22, 0.9) 58%);
+            padding: 0 0.18em;
+            margin: 0 0.05em;
+            transform: rotate(-2deg);
+            text-shadow:
+                2px 2px 0 rgba(0,0,0,0.4),
+                0 4px 12px rgba(0,0,0,0.5);
+        }
+
+        .hero-sub {
+            text-shadow: 0 2px 8px rgba(0,0,0,0.55);
+        }
+
+        /* セクションタグ */
+        .section-tag {
+            display: inline-block;
+            font-weight: 900;
+            font-size: 0.75rem;
+            letter-spacing: 0.3em;
+            color: var(--color-accent);
+            margin-bottom: 0.5rem;
+        }
+
+        .price-pill {
+            display: inline-block;
+            background: white;
+            border: 2px dashed var(--color-accent);
+            padding: 0.5rem 1.25rem;
+            border-radius: 9999px;
+            font-weight: 700;
+            color: var(--color-text);
+        }
+
+        .room-tag {
+            background: rgba(255,255,255,0.85);
+            padding: 0.4rem 0.9rem;
+            border-radius: 9999px;
+            font-size: 0.75rem;
+            font-weight: 700;
+            color: var(--color-main);
+            backdrop-filter: blur(4px);
+        }
+    </style>
+</head>
+<body class="bg-pattern">
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-K64K3WZP"
+    height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+
+    <div id="floating-cta" class="floating-cta md:hidden">
+        <a href="#booking" class="btn-bounce w-full text-center shadow-2xl">今すぐ予約する！</a>
+    </div>
+
+    <!-- HERO -->
+    <header class="relative min-h-[90vh] flex items-center justify-center p-6 overflow-hidden">
+        <div class="absolute inset-4 z-0 rounded-[3rem] overflow-hidden shadow-2xl bg-gray-100">
+            <div class="accordion-wrapper" id="accordion-gallery">
+                <a href="#bbq" class="accordion-item">
+                    <img src="images/room-4.jpg" alt="屋根付きBBQ">
+                    <div class="absolute inset-0 bg-black/10"></div>
+                    <span class="accordion-label">BBQ</span>
+                </a>
+                <a href="#sauna" class="accordion-item">
+                    <img src="images/6.jpg" alt="ドームサウナ">
+                    <div class="absolute inset-0 bg-black/10"></div>
+                    <span class="accordion-label">SAUNA</span>
+                </a>
+                <a href="#bath" class="accordion-item">
+                    <img src="images/bath-hero.jpg" alt="山水ドラム缶風呂">
+                    <div class="absolute inset-0 bg-black/10"></div>
+                    <span class="accordion-label">BATH</span>
+                </a>
+                <a href="#chill" class="accordion-item">
+                    <img src="images/chill.jpg" alt="ペアハンギングチェア">
+                    <div class="absolute inset-0 bg-black/10"></div>
+                    <span class="accordion-label">CHILL</span>
+                </a>
+            </div>
+            <div class="absolute inset-0 bg-black/30 pointer-events-none"></div>
+        </div>
+
+        <div class="header-content px-4">
+            <div class="header-text-elements text-white drop-shadow-lg">
+                <div class="inline-block bg-white/20 backdrop-blur-md px-4 py-1 rounded-full mb-6 border border-white/30">
+                    <p class="text-sm font-bold tracking-widest">持込BBQ × Forest Stay</p>
+                </div>
+                <h1 class="pop-title hero-h1 text-4xl md:text-6xl mb-8 leading-tight">
+                    <span class="hero-keyword">焼く</span>。<span class="hero-keyword">ととのう</span>。<span class="hero-keyword">揺れる</span>。<br>
+                    森ぜんぶ、貸切で。
+                </h1>
+                <p class="hero-sub text-lg md:text-2xl mb-12 font-medium leading-relaxed">
+                    屋根付きBBQ、ドームサウナ、山水ドラム缶風呂、ペアハンギングチェア。<br class="hidden md:block">
+                    気の合う仲間と、Log Kotiの森を<br class="hidden md:block">
+                    使い倒す週末を。
+                </p>
+            </div>
+            <div class="header-button-element">
+                <a href="#booking" class="btn-bounce">予約する！</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- プラン位置づけ -->
+    <section class="py-20 px-6">
+        <div class="max-w-4xl mx-auto text-center">
+            <span class="section-tag">CHOOSE YOUR STAY</span>
+            <h2 class="pop-title text-3xl md:text-4xl mb-8">
+                <span class="text-orange-500">「自分たちで焼きたい」</span>仲間が、<br>
+                森ぜんぶを使い倒すプラン。
+            </h2>
+            <div class="bg-white p-8 md:p-12 rounded-[2.5rem] shadow-xl relative">
+                <div class="absolute -top-6 -left-6 bg-orange-500 text-white w-20 h-20 rounded-full flex items-center justify-center font-black rotate-[-15deg] shadow-lg text-sm leading-tight text-center">食材<br>持込</div>
+                <p class="text-lg leading-relaxed text-gray-700">
+                    キャンプは荷物が多くて億劫。<br>
+                    ホテルは自由がない。<br>
+                    グランピングは食材決め打ちで物足りない。<br>
+                    <span class="highlight font-bold">そんな"4〜6人の自由派"のための、貸別荘BBQプラン。</span><br>
+                    食材だけ持ち込めば、機材も設備もぜんぶ完備。<br>
+                </p>
+            </div>
+            <a href="../カッセルコラボLP/index.html" class="mt-10 inline-flex items-center gap-2 text-sm md:text-base text-green-700 hover:text-orange-500 font-bold underline underline-offset-4">
+                🍷 カッセルディナー付きの"贅沢派プラン"はこちら →
+            </a>
+        </div>
+    </section>
+
+    <!-- BBQ -->
+    <section id="bbq" class="py-20 px-6 bg-orange-50 rounded-[3rem] mx-4 my-8">
+        <div class="max-w-6xl mx-auto flex flex-col md:flex-row items-center gap-12">
+            <div class="md:w-1/2">
+                <div class="relative">
+                    <img src="images/room-4.jpg" alt="屋根付き専用BBQスペース" class="w-full rounded-[2.5rem] shadow-2xl rotate-[-2deg] object-cover aspect-[4/3] bg-gray-100">
+                    <div class="absolute -bottom-6 -right-6 bg-orange-500 text-white p-6 rounded-3xl shadow-xl hidden md:block">
+                        <p class="text-xl font-black">All<br>Equipped!</p>
+                    </div>
+                </div>
+            </div>
+            <div class="md:w-1/2 space-y-6">
+                <span class="badge" style="background-color: var(--color-accent);">BBQ TERRACE</span>
+                <h3 class="pop-title text-3xl md:text-4xl text-orange-600 leading-tight">屋根付きだから、<br>雨の日も笑える。</h3>
+                <p class="text-gray-600 leading-loose">
+                    屋根付き専用BBQスペースに、ビストロBBQコンロ・カセットガスコンロ・トーチバーナー・調理器具一式が常備。<br>
+                    手ぶらに近い装備で、食材だけ持ち込めばすぐ"焼ける"。<br>
+                    天気に振り回されない、6人でも余裕の広さ。
+                </p>
+                <div class="grid grid-cols-2 gap-3">
+                    <div class="bg-white p-3 rounded-2xl border border-orange-100">
+                        <p class="text-xs font-bold text-orange-600">EQUIP</p>
+                        <p class="text-sm font-bold">BBQコンロ＋カセットコンロ</p>
+                    </div>
+                    <div class="bg-white p-3 rounded-2xl border border-orange-100">
+                        <p class="text-xs font-bold text-orange-600">SHELTER</p>
+                        <p class="text-sm font-bold">屋根付きで雨OK</p>
+                    </div>
+                    <div class="bg-white p-3 rounded-2xl border border-orange-100">
+                        <p class="text-xs font-bold text-orange-600">BONUS</p>
+                        <p class="text-sm font-bold">屋外ダルマストーブ</p>
+                    </div>
+                    <div class="bg-white p-3 rounded-2xl border border-orange-100">
+                        <p class="text-xs font-bold text-orange-600">EXTRA</p>
+                        <p class="text-sm font-bold">炭・薪は現地販売</p>
+                    </div>
+                </div>
+                <div class="flex flex-wrap gap-3 pt-4 border-t border-orange-100">
+                    <span class="text-orange-500 font-bold">#屋根付きBBQ</span>
+                    <span class="text-orange-500 font-bold">#手ぶら寄り</span>
+                    <span class="text-orange-500 font-bold">#雨でも安心</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SAUNA -->
+    <section id="sauna" class="py-20 px-6">
+        <div class="max-w-6xl mx-auto flex flex-col md:flex-row-reverse items-center gap-12">
+            <div class="md:w-1/2">
+                <div class="relative">
+                    <img src="images/6.jpg" alt="ドームサウナ" class="w-full rounded-[2.5rem] shadow-2xl rotate-[2deg] object-cover aspect-[4/3] bg-gray-100">
+                    <div class="absolute -top-6 -left-6 bg-green-700 text-white p-6 rounded-3xl shadow-xl hidden md:block">
+                        <p class="text-xl font-black">Private<br>Sauna!</p>
+                    </div>
+                </div>
+            </div>
+            <div class="md:w-1/2 space-y-6">
+                <span class="badge">DOME SAUNA</span>
+                <h3 class="pop-title text-3xl md:text-4xl text-green-800 leading-tight">"ととのう"を、<br>仲間内だけで。</h3>
+                <p class="text-gray-600 leading-loose">
+                    宿泊者だけが使える、完全貸切のドームサウナ。<br>
+                    セルフロウリュで温度は自分たち好みに。<br>
+                    外気浴は森の風と高原の空気。<br>
+                    周りを気にせず、好きなだけ往復できる時間。
+                </p>
+                <div class="flex flex-wrap gap-3 pt-4 border-t border-gray-100">
+                    <span class="text-green-700 font-bold">#完全貸切</span>
+                    <span class="text-green-700 font-bold">#セルフロウリュ</span>
+                    <span class="text-green-700 font-bold">#外気浴</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- BATH -->
+    <section id="bath" class="py-20 px-6 bg-green-50 rounded-[3rem] mx-4">
+        <div class="max-w-6xl mx-auto flex flex-col md:flex-row items-center gap-12">
+            <div class="md:w-1/2">
+                <div class="relative">
+                    <img src="images/bath.jpg" alt="山水ドラム缶風呂" class="w-full rounded-[2.5rem] shadow-2xl rotate-[-2deg] object-cover aspect-[4/3] bg-gray-100">
+                    <div class="absolute -bottom-6 -right-6 bg-orange-500 text-white p-6 rounded-3xl shadow-xl hidden md:block">
+                        <p class="text-xl font-black">Mountain<br>Water!</p>
+                    </div>
+                </div>
+            </div>
+            <div class="md:w-1/2 space-y-6">
+                <span class="badge">DRUM BATH</span>
+                <h3 class="pop-title text-3xl md:text-4xl text-green-800 leading-tight">浸かるのは、<br>山の水。</h3>
+                <p class="text-gray-600 leading-loose">
+                    生野高原の天然山水を引き込んだ、屋外のドラム缶風呂。<br>
+                    湯気の向こうに森と空が広がる、湯浴みの非日常。<br>
+                    サウナ → 外気浴 → 山水風呂 の三段構えで、芯までほどける夜。
+                </p>
+                <div class="bg-white/70 p-5 rounded-[2rem] border-2 border-dashed border-green-200">
+                    <p class="text-sm font-bold text-gray-700 leading-relaxed italic">
+                        「夜は星空のシャワー、朝は鳥の声で湯浴み🌿」
+                    </p>
+                </div>
+                <div class="flex flex-wrap gap-3 pt-4 border-t border-green-100">
+                    <span class="text-green-700 font-bold">#山水</span>
+                    <span class="text-green-700 font-bold">#ドラム缶風呂</span>
+                    <span class="text-green-700 font-bold">#温冷往復</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CHILL -->
+    <section id="chill" class="py-24 px-6">
+        <div class="max-w-6xl mx-auto">
+            <div class="text-center mb-12">
+                <span class="badge mb-6">HANGING CHAIR</span>
+                <h3 class="pop-title text-3xl md:text-5xl leading-snug">揺れて、ほどける。<br>森の特等席。</h3>
+            </div>
+            <div class="grid md:grid-cols-2 gap-10 items-center">
+                <div class="relative">
+                    <img src="images/chill.jpg" alt="ペアハンギングチェア" class="w-full rounded-[2.5rem] shadow-2xl rotate-[-1deg] object-cover aspect-[3/4] bg-gray-100">
+                    <div class="absolute -bottom-6 -right-6 bg-orange-500 text-white p-6 rounded-3xl shadow-xl hidden md:block">
+                        <p class="text-xl font-black">Slow<br>Time!</p>
+                    </div>
+                </div>
+                <div class="space-y-6">
+                    <p class="text-gray-600 leading-loose">
+                        ウッドデッキに吊るされた、ペアのハンギングチェア。<br>
+                        コーヒー片手に、ビール片手に、無言のままでも気まずくない。<br>
+                        小鳥のさえずりをBGMに、ふたりで森を独り占めする時間。<br>
+                        <span class="font-bold text-green-700 underline underline-offset-8">"何もしない贅沢"がここにある。</span>
+                    </p>
+                    <div class="grid grid-cols-2 gap-4">
+                        <div class="bg-orange-100 p-5 rounded-2xl text-left shadow-sm">
+                            <h4 class="font-black text-orange-600 text-base mb-1">♪ Day Chill</h4>
+                            <p class="text-xs">朝は珈琲、昼は本、夕方はビール。</p>
+                        </div>
+                        <div class="bg-green-100 p-5 rounded-2xl text-left shadow-sm">
+                            <h4 class="font-black text-green-700 text-base mb-1">♪ Night Chill</h4>
+                            <p class="text-xs">焚き火と星空のあいだで揺れる。</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- お部屋紹介 -->
+    <section id="rooms" class="py-24 px-6 bg-white">
+        <div class="max-w-6xl mx-auto">
+            <div class="text-center mb-12">
+                <span class="badge mb-4">YOUR ROOMS</span>
+                <h3 class="pop-title text-3xl md:text-4xl leading-tight">2ベッドルーム＋和室。<br>
+                    <span class="text-orange-500">男女混合4〜6人</span>でも、気兼ねなく。</h3>
+                <p class="text-gray-600 mt-6 leading-loose">
+                    シングルベッド3台のベッドルームと、お布団3組の和室。<br>
+                    部屋が分かれているから、カップル2組でも、男女ミックスの友人グループでも、<br>
+                    "誰がどこで寝る問題"に頭を悩ませず、ゆっくり眠れます。
+                </p>
+            </div>
+            <div class="grid md:grid-cols-3 gap-6">
+                <div class="relative rounded-[2rem] overflow-hidden shadow-xl aspect-[4/3]">
+                    <img src="images/room-2.jpg" alt="ベッドルーム" class="w-full h-full object-cover">
+                    <span class="absolute top-4 left-4 room-tag">🛏 ベッドルーム / シングル×3</span>
+                </div>
+                <div class="relative rounded-[2rem] overflow-hidden shadow-xl aspect-[4/3]">
+                    <img src="images/room-3.jpg" alt="和室" class="w-full h-full object-cover">
+                    <span class="absolute top-4 left-4 room-tag">🛌 和室 / お布団×3</span>
+                </div>
+                <div class="relative rounded-[2rem] overflow-hidden shadow-xl aspect-[4/3]">
+                    <img src="images/room-1.jpg" alt="リビング・キッチン" class="w-full h-full object-cover">
+                    <span class="absolute top-4 left-4 room-tag">🍳 リビング・キッチン</span>
+                </div>
+            </div>
+            <div class="mt-10 grid md:grid-cols-3 gap-4 text-sm">
+                <div class="bg-gray-50 p-4 rounded-2xl text-center">
+                    <p class="font-bold text-green-700">最大6名収容</p>
+                    <p class="text-gray-500 text-xs mt-1">ベッド3＋お布団3</p>
+                </div>
+                <div class="bg-gray-50 p-4 rounded-2xl text-center">
+                    <p class="font-bold text-green-700">Wi-Fi・冷暖房完備</p>
+                    <p class="text-gray-500 text-xs mt-1">TV・ドライヤー・スリッパも</p>
+                </div>
+                <div class="bg-gray-50 p-4 rounded-2xl text-center">
+                    <p class="font-bold text-green-700">フル装備キッチン</p>
+                    <p class="text-gray-500 text-xs mt-1">2口ガス・冷蔵庫・調理器具一式</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ご褒美ポイント -->
+    <section class="py-24 bg-green-800 text-white rounded-t-[4rem]">
+        <div class="max-w-6xl mx-auto px-6">
+            <h3 class="pop-title text-3xl text-center mb-16 italic opacity-80">"All in one, just for us."</h3>
+            <div class="grid md:grid-cols-3 gap-12">
+                <div class="text-center p-8 bg-white/10 rounded-[2rem] border border-white/20">
+                    <svg class="benefit-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M3 12h18" />
+                        <path d="M12 3v18" />
+                        <circle cx="12" cy="12" r="9" />
+                    </svg>
+                    <h4 class="font-black text-xl mb-4">ぜんぶ1棟貸切</h4>
+                    <p class="text-sm leading-loose opacity-70">BBQ・サウナ・風呂・ハンモック、ぜんぶあなたたちのもの。</p>
+                </div>
+                <div class="text-center p-8 bg-white/10 rounded-[2rem] border border-white/20">
+                    <svg class="benefit-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M3 17l6-6 4 4 8-8" />
+                        <path d="M14 7h7v7" />
+                    </svg>
+                    <h4 class="font-black text-xl mb-4">グループならコスパ最強</h4>
+                    <p class="text-sm leading-loose opacity-70">6人で割れば1人約12,300円〜（平日・素泊まり）。</p>
+                </div>
+                <div class="text-center p-8 bg-white/10 rounded-[2rem] border border-white/20">
+                    <svg class="benefit-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M12 2v4" />
+                        <path d="M12 18v4" />
+                        <path d="M4.93 4.93l2.83 2.83" />
+                        <path d="M16.24 16.24l2.83 2.83" />
+                        <path d="M2 12h4" />
+                        <path d="M18 12h4" />
+                        <path d="M4.93 19.07l2.83-2.83" />
+                        <path d="M16.24 7.76l2.83-2.83" />
+                    </svg>
+                    <h4 class="font-black text-xl mb-4">部屋分けで気兼ねなし</h4>
+                    <p class="text-sm leading-loose opacity-70">ベッドルーム＋和室の2部屋構成、男女混合でも安心。</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- お客様の声 -->
+    <section class="py-24 px-6 bg-white">
+        <div class="max-w-6xl mx-auto">
+            <div class="text-center mb-16">
+                <span class="badge mb-4">VOICES</span>
+                <h3 class="pop-title text-3xl md:text-4xl">利用された方の声</h3>
+            </div>
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="card-pop p-8 italic text-gray-600 relative">
+                    <span class="text-6xl text-orange-200 absolute top-4 left-4 font-serif">“</span>
+                    <p class="relative z-10 pt-4 mb-6 text-sm">「友人カップル2組と4人で利用。屋根付きBBQで雨でも全然平気、ガスも炭も道具もぜんぶ揃ってて、食材だけ買い込めばOK。サウナも入り放題で完璧でした。」</p>
+                    <p class="text-xs font-bold text-right text-gray-400">ー 30代 男性（友人カップル2組で）</p>
+                </div>
+                <div class="card-pop p-8 italic text-gray-600 relative">
+                    <span class="text-6xl text-green-200 absolute top-4 left-4 font-serif">“</span>
+                    <p class="relative z-10 pt-4 mb-6 text-sm">「学生時代の仲間6人（男3女3）で。ベッドルームと和室で部屋分けできるから気兼ねなく寝られて、サウナとドラム缶風呂で大盛り上がり。次は冬に来ます！」</p>
+                    <p class="text-xs font-bold text-right text-gray-400">ー 30代 女性（友人グループ6名）</p>
+                </div>
+                <div class="card-pop p-8 italic text-gray-600 relative">
+                    <span class="text-6xl text-orange-200 absolute top-4 left-4 font-serif">“</span>
+                    <p class="relative z-10 pt-4 mb-6 text-sm">「家族＋祖父母の三世代で。芝生で子供がのびのび、両親はドラム缶風呂、僕らはサウナと、それぞれの楽しみ方ができたのが良かったです。」</p>
+                    <p class="text-xs font-bold text-right text-gray-400">ー 40代 男性（三世代6名）</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ACCESS -->
+    <section id="access" class="py-24 px-6 bg-[#fcfcfc]">
+        <div class="max-w-4xl mx-auto text-center">
+            <span class="badge mb-6">ACCESS</span>
+            <h3 class="pop-title text-3xl md:text-4xl mb-12">どこにあるの？</h3>
+            <div class="card-pop overflow-hidden shadow-lg">
+                <div class="bg-gray-200 aspect-video relative">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3261.4085645847645!2d134.76048487621418!3d35.17136815781296!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x35554329ad941637%3A0x6c190b3f5cf18a18!2zU1VHT01vUknjg6rjgr7jg7zjg4jnlJ_ph47pq5jljp_vvIhMb2dLb3Rp77yJ!5e0!3m2!1sja!2sjp!4v1772420549685!5m2!1sja!2sjp" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+                <div class="p-8 text-left grid md:grid-cols-2 gap-8">
+                    <div>
+                        <h4 class="font-bold text-green-800 mb-2">● お車でお越しの方</h4>
+                        <p class="text-sm text-gray-600">播但連絡道路「生野ランプ」から約10分。京阪神から約1.5時間。<br>※駐車場2台</p>
+                    </div>
+                    <div>
+                        <h4 class="font-bold text-green-800 mb-2">● 電車でお越しの方</h4>
+                        <p class="text-sm text-gray-600">JR播但線「生野駅」下車。タクシーで約10分。</p>
+                    </div>
+                </div>
+            </div>
+            <div class="mt-8 grid md:grid-cols-3 gap-3 text-xs text-gray-500">
+                <div class="bg-white p-3 rounded-2xl border border-gray-100">⚠ 水は天然山水のため飲料水としては利用不可</div>
+                <div class="bg-white p-3 rounded-2xl border border-gray-100">🐾 ペットの同伴は不可</div>
+                <div class="bg-white p-3 rounded-2xl border border-gray-100">🚗 駐車場2台（乗合推奨）</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- BOOKING -->
+    <section id="booking" class="py-24 px-6 bg-white relative">
+        <div class="max-w-3xl mx-auto px-4">
+            <div class="relative">
+                <div class="absolute -top-12 -right-6 w-32 h-32 bg-yellow-400 rounded-full flex items-center justify-center font-black rotate-12 shadow-lg z-10 text-center text-sm leading-tight text-yellow-900">
+                    4〜6人<br>がベスト！
+                </div>
+                <div class="border-[4px] border-orange-500 rounded-[3rem] p-8 md:p-16 relative bg-white shadow-2xl">
+                    <h2 class="pop-title text-3xl text-center mb-6 tracking-wider">Plan & Booking</h2>
+
+                    <div class="text-center mb-10">
+                        <p class="text-sm text-gray-500 mb-2">1棟貸切（最大6名）／持込BBQプラン</p>
+                        <div class="flex flex-wrap justify-center gap-3 mt-4">
+                            <span class="price-pill">平日 6人 ¥73,700〜</span>
+                            <span class="price-pill">休日前 6人 ¥84,700〜</span>
+                        </div>
+                        <p class="text-xs text-gray-500 mt-3">6人で割れば1人約 ¥12,300〜（平日・税込）</p>
+                    </div>
+
+                    <ul class="space-y-6 mb-10">
+                        <li class="flex items-start gap-4 pb-4 border-b border-gray-100">
+                            <span class="text-orange-500 text-xl font-bold">01</span>
+                            <div>
+                                <p class="font-bold">屋根付きBBQ機材一式 完備</p>
+                                <p class="text-sm text-gray-500">BBQコンロ・カセットガス・調理器具／炭・薪は現地販売</p>
+                            </div>
+                        </li>
+                        <li class="flex items-start gap-4 pb-4 border-b border-gray-100">
+                            <span class="text-orange-500 text-xl font-bold">02</span>
+                            <div>
+                                <p class="font-bold">ドームサウナ＆山水ドラム缶風呂</p>
+                                <p class="text-sm text-gray-500">宿泊者限定・完全貸切で、何度でも温冷往復</p>
+                            </div>
+                        </li>
+                        <li class="flex items-start gap-4 pb-4 border-b border-gray-100">
+                            <span class="text-orange-500 text-xl font-bold">03</span>
+                            <div>
+                                <p class="font-bold">ペアハンギングチェア＆芝生庭</p>
+                                <p class="text-sm text-gray-500">ウッドデッキで揺られる時間と、屋外ダルマストーブ</p>
+                            </div>
+                        </li>
+                        <li class="flex items-start gap-4">
+                            <span class="text-orange-500 text-xl font-bold">04</span>
+                            <div>
+                                <p class="font-bold">2ベッドルーム＋和室</p>
+                                <p class="text-sm text-gray-500">男女混合4〜6人でも安心の部屋分け構成</p>
+                            </div>
+                        </li>
+                    </ul>
+
+                    <div class="space-y-4">
+                        <p class="text-xs text-gray-500 text-center mb-2">
+                            ご宿泊日に応じた予約サイトをお選びください<br>
+                            <span class="text-[10px] text-gray-400">※2026/7/1以降は予約サイトが切り替わります</span>
+                        </p>
+                        <a href="https://reserve.489ban.net/client/sugomori-hyogo/0/detail/1119859" target="_blank" rel="noopener noreferrer" class="btn-bounce w-full text-center block">
+                            📅 〜2026/6/30チェックインの予約
+                        </a>
+                        <a href="https://d-reserve.jp/GSEA004F01600/GSEA004A01?hotelCode=0000003585&pl=PL00063725&rmcd001=RM00023992&rm001=1&lt001=0_1_2_3&lnum001=2_0_0_0&ci=20260510&co=20260511&sumrm=1&way=1&cinon=true&dpck=false&DPCheckEnable=false" target="_blank" rel="noopener noreferrer" class="btn-green w-full text-center block">
+                            📅 2026/7/1以降チェックインの予約
+                        </a>
+                        <p class="text-[10px] text-gray-400 text-center tracking-widest uppercase mt-4">※外部予約サイトへ遷移します</p>
+                    </div>
+
+                    <div class="mt-10 pt-8 border-t-2 border-dashed border-gray-200 text-center">
+                        <p class="text-sm text-gray-600 mb-3">🍷 「BBQじゃなくて、夜は名店ディナーで贅沢に」という方へ</p>
+                        <a href="../カッセルコラボLP/index.html" class="inline-block text-green-700 hover:text-orange-500 font-bold underline underline-offset-4 text-sm">
+                            カッセル食事コラボプランをみる →
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="py-16 bg-[#2d2d2d] text-white text-center">
+        <div class="container mx-auto px-6">
+            <h2 class="pop-title text-2xl mb-12 text-gray-200">生野高原で、森を使い倒す週末を。</h2>
+            <div class="flex flex-wrap justify-center gap-12 mb-16 text-gray-100">
+                <div class="text-left">
+                    <p class="text-xs text-gray-400 mb-2 uppercase tracking-widest">Stay Location</p>
+                    <a href="https://sugomori.hyogo.jp/plan/log-koti/" target="_blank" rel="noopener noreferrer" class="font-bold hover:text-orange-400 hover:underline transition-all">SUGOMoRIリゾート生野高原 Log Koti</a>
+                </div>
+                <div class="text-left">
+                    <p class="text-xs text-gray-400 mb-2 uppercase tracking-widest">Dinner Option</p>
+                    <a href="https://kassel.jp/" target="_blank" rel="noopener noreferrer" class="font-bold hover:text-orange-400 hover:underline transition-all">カッセル (Kassel)</a>
+                </div>
+            </div>
+            <p class="text-[10px] opacity-40 tracking-[0.2em]">© 2026 SUGOMoRI Log Koti BYO BBQ Plan. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <script>
+        const accordionItems = document.querySelectorAll('.accordion-item');
+        const accordionWrapper = document.getElementById('accordion-gallery');
+
+        accordionItems.forEach(item => {
+            item.addEventListener('click', (e) => {
+                accordionItems.forEach(i => i.classList.remove('active'));
+                item.classList.add('active');
+                accordionWrapper.classList.add('has-active');
+            });
+        });
+
+        const observerOptions = { threshold: 0.1 };
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('visible');
+                }
+            });
+        }, observerOptions);
+
+        document.querySelectorAll('section, div[class*="md:w-"], .card-pop').forEach(el => {
+            el.classList.add('fade-in');
+            observer.observe(el);
+        });
+
+        const floatingCta = document.getElementById('floating-cta');
+        window.addEventListener('scroll', () => {
+            if (window.scrollY > 300) {
+                floatingCta.classList.add('show');
+            } else {
+                floatingCta.classList.remove('show');
+            }
+        });
+    </script>
+</body>
+</html>
