@@ -346,11 +346,27 @@
                     使い倒す週末を。
                 </p>
             </div>
-            <div class="header-button-element">
+            <div class="header-button-element flex flex-col items-center gap-4">
+                <div class="bg-white/95 backdrop-blur-sm px-5 py-3 rounded-2xl shadow-xl text-center">
+                    <p class="text-[11px] text-gray-500 font-bold mb-1">平日 6名利用・1棟貸切（税込）</p>
+                    <p class="leading-tight">
+                        <span class="text-2xl md:text-3xl font-black text-orange-600">¥73,700</span>
+                        <span class="text-sm font-bold text-gray-600">/棟</span>
+                        <span class="text-gray-300 mx-1">→</span>
+                        <span class="text-xl md:text-2xl font-black text-green-700">1人¥12,300〜</span>
+                    </p>
+                    <p class="text-[11px] text-orange-600 font-bold mt-1">サウナ付き貸別荘では関西でも屈指のコスパ</p>
+                </div>
                 <a href="#booking" class="btn-bounce">予約する！</a>
             </div>
         </div>
     </header>
+
+    <!-- モニター予告バー -->
+    <a href="#monitor" class="block bg-orange-500 hover:bg-orange-600 transition-colors text-white text-center py-4 px-6 no-underline">
+        <span class="font-black text-sm md:text-base">🎁 毎月1組「体験モニター」募集中｜宿泊50%OFF</span>
+        <span class="block md:inline text-xs md:text-sm opacity-90 md:ml-2 mt-1 md:mt-0">― 詳しくはこのページの最後に！タップで移動 ↓</span>
+    </a>
 
     <!-- プラン位置づけ -->
     <section class="py-20 px-6">
@@ -647,6 +663,47 @@
         </div>
     </section>
 
+    <!-- モニター募集 -->
+    <section id="monitor" class="py-24 px-6">
+        <div class="max-w-5xl mx-auto">
+            <div class="bg-gradient-to-br from-green-700 to-green-900 text-white rounded-[3rem] p-8 md:p-16 shadow-2xl relative overflow-hidden">
+                <div class="absolute -top-10 -right-10 w-40 h-40 bg-yellow-400/20 rounded-full"></div>
+                <div class="absolute -bottom-12 -left-12 w-52 h-52 bg-orange-400/10 rounded-full"></div>
+                <div class="relative text-center">
+                    <span class="inline-block bg-yellow-300 text-green-900 px-5 py-1.5 rounded-full font-black text-sm mb-6 rotate-[-2deg]">毎月抽選 / 1組限定</span>
+                    <h3 class="pop-title text-3xl md:text-5xl mb-4">体験モニター募集</h3>
+                    <p class="text-base md:text-lg opacity-90 mb-10 leading-relaxed">
+                        あなたの"森の使い倒し方"を、みんなに教えてください。<br>
+                        特別なモニター価格で、Log Kotiにご招待します。
+                    </p>
+
+                    <div class="bg-white/10 backdrop-blur-sm rounded-[2rem] p-6 md:p-8 mb-8 border border-white/20 inline-block">
+                        <p class="text-sm opacity-80 mb-1">モニター特典</p>
+                        <p class="text-3xl md:text-4xl font-black text-yellow-300">宿泊料金 50%OFF</p>
+                        <p class="text-xs opacity-70 mt-2 leading-relaxed">※平日6名利用時の例：1人あたり約 ¥6,150〜<br>※宿泊料金は宿泊日（曜日・シーズン）により変動します。50%OFFは利用日の通常料金を基準に算出します。</p>
+                    </div>
+
+                    <div class="text-left max-w-2xl mx-auto bg-white/10 rounded-[2rem] p-6 md:p-8 border border-white/20">
+                        <p class="font-black text-yellow-300 mb-4 text-center">参加条件（広報へのご協力）</p>
+                        <ul class="space-y-3 text-sm md:text-base">
+                            <li class="flex gap-3"><span class="text-yellow-300 font-black">01</span><span>4〜6名でのご利用</span></li>
+                            <li class="flex gap-3"><span class="text-yellow-300 font-black">02</span><span>滞在写真・動画をSNS（Instagram／TikTok）に2投稿以上（指定タグ付け）</span></li>
+                            <li class="flex gap-3"><span class="text-yellow-300 font-black">03</span><span>Googleマップまたは予約サイトに口コミを1件投稿</span></li>
+                            <li class="flex gap-3"><span class="text-yellow-300 font-black">04</span><span>撮影した写真・動画の当施設での二次利用を許諾（顔出しは任意）</span></li>
+                            <li class="flex gap-3"><span class="text-yellow-300 font-black">05</span><span>滞在後の簡単なアンケートに回答</span></li>
+                            <li class="flex gap-3"><span class="text-yellow-300 font-black">06</span><span>良識ある投稿内容（規約遵守）</span></li>
+                        </ul>
+                    </div>
+
+                    <div class="mt-10">
+                        <a href="mailto:sugomori.hyogo@gmail.com?subject=【Log%20Koti】体験モニター応募&amp;body=Log%20Koti%20体験モニターに応募します。%0D%0A%0D%0A▼以下をご記入ください%0D%0A・代表者氏名：%0D%0A・利用希望月（第1〜第3希望）：%0D%0A・利用人数（4〜6名）：%0D%0A・SNSアカウント（Instagram／TikTok等）：%0D%0A・電話番号：%0D%0A・メールアドレス：%0D%0A%0D%0A※参加条件（SNS投稿・口コミ投稿・写真の二次利用許諾・アンケート回答）に同意のうえ応募します。" class="btn-bounce inline-block">メールでモニターに応募する</a>
+                        <p class="text-xs opacity-60 mt-4">毎月末締切 → 翌月初に当選者へメールでご連絡します<br>※通常のご予約は下記の予約サイトから承ります</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
     <!-- ACCESS -->
     <section id="access" class="py-24 px-6 bg-[#fcfcfc]">
         <div class="max-w-4xl mx-auto text-center">
@@ -693,6 +750,7 @@
                         </div>
                         <p class="text-xs text-gray-500 mt-3">6人で割れば1人約 ¥12,300〜（平日・税込）</p>
                         <p class="text-[11px] md:text-xs text-orange-600 mt-2 font-bold">この価格帯で4設備全部貸切は、関西でもレアポジション</p>
+                        <p class="text-[11px] text-gray-500 mt-3 leading-relaxed">※宿泊料金は宿泊日（曜日・シーズン）により変動します。</p>
                     </div>
 
                     <ul class="space-y-6 mb-10">
