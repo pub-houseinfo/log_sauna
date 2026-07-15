@@ -787,15 +787,8 @@
                     </ul>
 
                     <div class="space-y-4">
-                        <p class="text-xs text-gray-500 text-center mb-2">
-                            ご宿泊日に応じた予約サイトをお選びください<br>
-                            <span class="text-[10px] text-gray-400">※2026/7/1以降は予約サイトが切り替わります</span>
-                        </p>
-                        <a href="https://reserve.489ban.net/client/sugomori-hyogo/0/detail/1119859" target="_blank" rel="noopener noreferrer" class="btn-bounce w-full text-center block">
-                            📅 〜2026/6/30チェックインの予約
-                        </a>
-                        <a href="https://d-reserve.jp/GSEA004F01600/GSEA004A01?hotelCode=0000003585&pl=PL00063725&rmcd001=RM00023992&rm001=1&lt001=0_1_2_3&lnum001=2_0_0_0&ci=20260510&co=20260511&sumrm=1&way=1&cinon=true&dpck=false&DPCheckEnable=false" target="_blank" rel="noopener noreferrer" class="btn-green w-full text-center block">
-                            📅 2026/7/1以降チェックインの予約
+                        <a href="https://d-reserve.jp/GSEA004F01600/GSEA004A01?hotelCode=0000003585&pl=PL00063725&rmcd001=RM00023992&rm001=1&lt001=0_1_2_3&lnum001=2_0_0_0&ci=20260510&co=20260511&sumrm=1&way=1&cinon=true&dpck=false&DPCheckEnable=false" target="_blank" rel="noopener noreferrer" id="booking-link" class="btn-bounce w-full text-center block">
+                            📅 空室状況を見て予約する
                         </a>
                         <p class="text-[10px] text-gray-400 text-center tracking-widest uppercase mt-4">※外部予約サイトへ遷移します</p>
                     </div>
@@ -830,6 +823,20 @@
     </footer>
 
     <script>
+        // 予約リンクのチェックイン/チェックアウト日を、アクセス時点から見て近い日付へ自動更新
+        // （固定日付だと空室カレンダーが過去月で開いてしまい離脱要因になるため）
+        document.querySelectorAll('a[href*="d-reserve.jp"]').forEach(link => {
+            const ci = new Date();
+            ci.setDate(ci.getDate() + 1);
+            const co = new Date(ci);
+            co.setDate(co.getDate() + 1);
+            const fmt = d => `${d.getFullYear()}${String(d.getMonth() + 1).padStart(2, '0')}${String(d.getDate()).padStart(2, '0')}`;
+            const url = new URL(link.href);
+            url.searchParams.set('ci', fmt(ci));
+            url.searchParams.set('co', fmt(co));
+            link.href = url.toString();
+        });
+
         const accordionItems = document.querySelectorAll('.accordion-item');
         const accordionWrapper = document.getElementById('accordion-gallery');
 
